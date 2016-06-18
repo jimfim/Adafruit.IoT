@@ -115,9 +115,9 @@ namespace Adafruit.IoT.Motors
             _speed = rpm;
 
 
-            if (_IN1pin.IsStarted) { this._IN1pin.SetActiveDutyCyclePercentage(_speed); }
+            this._IN1pin.SetActiveDutyCyclePercentage(_speed); 
 
-            if (_IN2pin.IsStarted) { this._IN2pin.SetActiveDutyCyclePercentage(_speed); }
+            this._IN2pin.SetActiveDutyCyclePercentage(_speed);
         }
 
         #region IDisposable Support
